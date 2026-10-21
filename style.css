@@ -1,0 +1,101 @@
+body {
+    background-color: #cee7fe;
+    color: #86a6c2;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    max-width: 1000px;
+    width: 80%;
+    margin: auto;
+}
+
+
+header {
+    background-color: #303e4e;
+    padding: 7px 0px 7px 0px;
+}
+
+header h1{
+    margin: 0;
+    text-align: center;
+    font-family: broadway;
+    letter-spacing: 5px;
+}
+
+header h1::first-letter {
+    text-transform: uppercase;
+}
+
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    background-color: #434f5d;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0px 10px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #b0d9fe;
+    font-size: 17px;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: #434f5d;
+    background-color: #b0d9fe;
+    padding: 5px 3px 5px 3px;
+    border-radius: 12px;
+}
+
+
+
+
+.pszoveg{
+    color: rgb(50, 90, 102);
+}
+
+.kartyak {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.kartya{
+    background-color: white;
+    color: rgb(50, 90, 102);
+    padding: 10px;
+}
+
+.kartya h2 {
+    background-color: #cee7fe;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px ;
+}
+
+.kartya p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 500px){
+    .kartyak{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+footer span{
+    color: #324b61;
+}
